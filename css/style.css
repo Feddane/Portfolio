@@ -19,8 +19,8 @@ ul{
     --bg-color: #222222;
     --body-bg-color: #2d2d33;
     --border-color: #303030;
-    --gardient-start: rgb(26, 26, 26);
-    --gardient-end: #0c0c0c;
+    --gradient-start: rgb(26, 26, 26);
+    --gradient-end: #0c0c0c;
     --bg-gradient-start: #2d2f31;
     --bg-gradient-end: #272a2e;
 }
@@ -32,7 +32,7 @@ body{
 }
 
 .bg-gredient{
-    background: linear-gradient(120deg, var(--bg-gradient-start), var(--bg-gradient-end)) !important;
+    background: linear-gradient(120deg, var(--gradient-start), var(--gradient-end)) !important;
 }
 
 /*Main*/
@@ -66,7 +66,7 @@ header ul{
 }
 
 header ul{
-    background: linear-gradient(120deg, var(--bg-gradient-start), var(--bg-gradient-end)) !important;
+    background: linear-gradient(120deg, var(--gradient-start), var(--gradient-end)) !important;
     padding: 10px 5px;
     border-radius: 30px;
     display: grid;
@@ -127,4 +127,19 @@ header nav ul li a:hover::before,
 header nav ul li a:hover::after{
     opacity: 1;
     visibility: visible;
+}
+
+.dark-light-btn{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
