@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+:root{
+    --main-color: #78CC6D;
+    --secondary-color: #5F85DB;
+    --text-color: #F6F4F0;
+    --bg-color: #222222;
+    --body-bg-color: #2d2d33;
+    --border-color: #303030;
+    --gardient-start: rgb(26, 26, 26);
+    --gardient-end: #0c0c0c;
+    --bg-gradient-start: #2d2f31;
+    --bg-gradient-end: #272a2e;
+}
