@@ -24,3 +24,107 @@ ul{
     --bg-gradient-start: #2d2f31;
     --bg-gradient-end: #272a2e;
 }
+
+body{
+    color: var(--text-color);
+    background-image: linear-gradient(120deg, var(--bg-gradient-start), var(--bg-gradient-end)) !important;
+    background-attachment: fixed;
+}
+
+.bg-gredient{
+    background: linear-gradient(120deg, var(--bg-gradient-start), var(--bg-gradient-end)) !important;
+}
+
+/*Main*/
+.main-container{
+    max-width: 1320px;
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 425px 1fr;
+    grid-gap:10px;
+    align-items: flex-start;
+}
+
+.menu-profile{
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    grid-gap: 10px;
+}
+
+header{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+header,
+header ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header ul{
+    background: linear-gradient(120deg, var(--bg-gradient-start), var(--bg-gradient-end)) !important;
+    padding: 10px 5px;
+    border-radius: 30px;
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+header ul li a{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-family: 1.03rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    position: relative;
+    transition: all ease 0.2s ;
+}
+
+header ul li a::after{
+    content: attr(data-label);
+    position: absolute;
+    top: 50%;
+    left: 120%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3 ease, visibility 0.3s ease;
+
+}
+
+header ul li a::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5px 5px 5px 0px;
+    border-color: transparent var(--main-color) transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3 ease, visibility 0.3s ease
+}
+
+header nav ul li a:hover::before,
+header nav ul li a:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
