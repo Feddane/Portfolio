@@ -142,4 +142,10 @@ header nav ul li a:hover::after{
     border: none;
     outline: none;
     cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.dark-light-btn:hover,
+header ul li a:hover{
+    color: var(--main-color);
 }
