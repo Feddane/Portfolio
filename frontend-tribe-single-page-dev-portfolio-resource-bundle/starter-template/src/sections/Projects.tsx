@@ -49,7 +49,7 @@ export const ProjectsSection = () => {
   return <div>
     <section className="pb-16 lg:py-24">
       <div className="container">
-        <div className="flex justify-center">
+        <div className="flex flex-col items-center text-center">
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent">Real-world Results</p>
           <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">Featured Projects</h2>
           <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">See how I transform concepts into engaging digital experiences.</p>
