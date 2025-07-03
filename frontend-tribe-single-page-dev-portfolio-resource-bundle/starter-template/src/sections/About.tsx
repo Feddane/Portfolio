@@ -65,6 +65,13 @@ export const AboutSection = () => {
             </div>
           ))}
       </div>
+      <Card>
+        <div>
+          <StarIcon />
+          <h3>Beyond the Code</h3>
+          <p>Explore my interest and hobbies beyond the digital realm.</p>
+        </div>
+      </Card>
     </Card>
 
   </div>;
