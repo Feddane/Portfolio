@@ -18,3 +18,23 @@
         @apply lg:max-w-5xl;
     }
 }
+
+.custom-scrollbar {
+  scrollbar-width: auto; /* thick for Firefox */
+  scrollbar-color: #38bdf8 transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 12px; /* 👈 épaisseur de la scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #38bdf8; /* sky-400 */
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  margin-top: 4px; /* 👈 espace entre le contenu et la scrollbar */
+}
+
