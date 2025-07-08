@@ -48,10 +48,10 @@ const hobbies = [
     top: "40%",
   },
   {
-    title: "Coding",
-    emoji: "https://em-content.zobj.net/thumbs/160/apple/354/laptop_1f4bb.png",
-    left: "60%",
-    top: "70%",
+  title: "Fashion",
+  emoji: "https://em-content.zobj.net/thumbs/160/apple/354/high-heeled-shoe_1f460.png",
+  left: "60%",
+  top: "70%",
   },
   {
     title: "Gaming",
