@@ -90,7 +90,8 @@ export const AboutSection = () => {
                 description="Explore the technologies and tools I use to craft exceptional digital experiences."
                 className="px-6 pt-6"
               />
-              <ToolboxItems items={toolboxItems} className="mt-6 px-6" />
+              <ToolboxItems items={toolboxItems} className="" itemsWrapperClassName="animate-move-left [animation-duration:2s]"/>
+              <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:2s]"/>
             </Card>
 
           </div>
