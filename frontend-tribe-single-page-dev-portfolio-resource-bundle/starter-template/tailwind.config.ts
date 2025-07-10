@@ -28,8 +28,8 @@ const config: Config = {
       animation: {
         'ping-large': 'ping-large 1s ease-in-out infinite',
         'spin-slow': 'spin 10s linear infinite',
-        'move-left': 'move-left 1s linear infinite',
-        'move-right': 'move-right 1s linear infinite',
+        'move-left': 'move-left 8s linear infinite',
+        'move-right': 'move-right 8s linear infinite',
 
       },
       keyframes: {
@@ -39,22 +39,14 @@ const config: Config = {
             opacity: '0',
           }
         },
-        'move-left':{
-           '0%': {
-              transform: 'translateX(0)'
+        'move-left': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
-        '100%': {
-          transform: 'translateX(-50%)'
-        }
+        'move-right': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0%)' },
         },
-        'move-right':{
-           '0%': {
-              transform: 'translateX(-50%)'
-        },
-        '100%': {
-          transform: 'translateX(0%)'
-        }
-        }
       }
     },
   },

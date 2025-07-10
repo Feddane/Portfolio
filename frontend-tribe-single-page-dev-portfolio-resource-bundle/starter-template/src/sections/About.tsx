@@ -7,9 +7,14 @@ import Image from "next/image";
 import JavascriptIcon from "../assets/icons/square-js.svg";
 import HTMLIcon from "../assets/icons/html5.svg";
 import CssIcon from "../assets/icons/css3.svg";
-import ChromeIcon from "../assets/icons/chrome.svg";
 import GithubIcon from "../assets/icons/github.svg";
-import { TechIcon } from "@/components/TechIcon";
+import kotlinIcon from "../assets/icons/kotlin.svg"
+import pythonIcon from "../assets/icons/python.svg"
+import mysqlIcon from "../assets/icons/mysql.svg"
+import figmaIcon from "../assets/icons/figma.svg";
+import javaIcon from "../assets/icons/java.svg";
+import canvaIcon from "../assets/icons/canva.svg";
+import premierepro from "../assets/icons/premiere-pro.svg";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/chaima.png";
 import { CardHeader } from "@/components/CardHeader";
@@ -21,8 +26,14 @@ const toolboxItems = [
   { title: "Javascript", iconType: JavascriptIcon },
   { title: "HTML5", iconType: HTMLIcon },
   { title: "CSS3", iconType: CssIcon },
-  { title: "Chrome", iconType: ChromeIcon },
   { title: "Github", iconType: GithubIcon },
+  { title: "kotlin", iconType: kotlinIcon },
+  { title: "Python", iconType: pythonIcon },
+  { title: "Figma", iconType: figmaIcon },
+  { title: "MySQL", iconType: mysqlIcon },
+  { title: "Java", iconType: javaIcon },
+  { title: "Adobe Premiere Pro", iconType: premierepro },
+  { title: "Canva", iconType: canvaIcon },
 ];
 
 const hobbies = [
@@ -94,11 +105,19 @@ export const AboutSection = () => {
                 description="Explore the technologies and tools I use to craft exceptional digital experiences."
                 className="px-6 pt-6"
               />
-              <ToolboxItems items={toolboxItems} className="" itemsWrapperClassName="animate-move-left [animation-duration:2s]"/>
-              <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:2s]"/>
+              <ToolboxItems
+                items={[...toolboxItems, ...toolboxItems]}
+                className=""
+                itemsWrapperClassName="animate-move-left [animation-duration:8s]"
+              />
+              <ToolboxItems
+                items={[...toolboxItems, ...toolboxItems]}
+                className="mt-6"
+                itemsWrapperClassName="animate-move-right [animation-duration:8s]"
+              />
             </Card>
-
           </div>
+
 
           {/* Ligne 2 */}
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
