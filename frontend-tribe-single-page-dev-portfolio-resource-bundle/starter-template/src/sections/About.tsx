@@ -16,7 +16,7 @@ import javaIcon from "../assets/icons/java.svg";
 import canvaIcon from "../assets/icons/canva.svg";
 import premierepro from "../assets/icons/premiere-pro.svg";
 import mapImage from "@/assets/images/map.png";
-import canvaPreviewImage from "@/assets/images/canva projects (4).png";
+import canvaPreviewImage from "@/assets/images/canva projects.png";
 import smileMemoji from "@/assets/images/chaima.png";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
