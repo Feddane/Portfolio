@@ -16,11 +16,13 @@ import javaIcon from "../assets/icons/java.svg";
 import canvaIcon from "../assets/icons/canva.svg";
 import premierepro from "../assets/icons/premiere-pro.svg";
 import mapImage from "@/assets/images/map.png";
+import canvaPreviewImage from "@/assets/images/canva projects (4).png";
 import smileMemoji from "@/assets/images/chaima.png";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import {motion} from "framer-motion";
 import { useRef } from "react";
+import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
 const toolboxItems = [
   { title: "Javascript", iconType: JavascriptIcon },
@@ -89,15 +91,37 @@ export const AboutSection = () => {
         <div className="mt-20 flex flex-col gap-8">
           {/* Ligne 1 */}
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-            <Card className="h-[320px] p-0 flex flex-col w-full md:col-span-2">
+
+            <Card className="h-[320px] p-0 flex flex-col w-full md:col-span-2 relative">
+              <div className="absolute top-4 right-4">
+                <a
+                  href="https://drive.google.com/drive/folders/1pKLStm8QVk-j4SlaXq-_bxZIBskcS9bF?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="bg-white text-gray-950 h-10 px-4 rounded-full font-semibold inline-flex items-center justify-center gap-2 shadow hover:bg-white/80 transition text-sm">
+                    <span>View</span>
+                    <ArrowUpRightIcon className="size-4" />
+                  </button>
+                </a>
+              </div>
+
+
               <CardHeader
-                title="My Reads"
-                description="Explore the books shaping my perspectives."
+                title="My Canva Projects"
+                description="Creative projects made with Canva — from storytelling to branding."
+                className="px-6 pt-6 pb-2"
               />
-              <div className="w-40 mx-auto mt-2 md:mt-0">
-                <Image src={bookImage} alt="Book Cover" />
+
+              <div className="w-40 mx-auto -mt-6">
+                <Image
+                  src={canvaPreviewImage}
+                  alt="Book Cover"
+                  className="rounded-xl shadow-md"
+                />
               </div>
             </Card>
+
 
             <Card className="h-[320px] p-0 flex flex-col w-full md:col-span-3">
               <CardHeader
