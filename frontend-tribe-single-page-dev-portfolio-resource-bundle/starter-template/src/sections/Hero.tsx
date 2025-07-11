@@ -77,18 +77,25 @@ export const HeroSection = () => {
           </button>
       </a>
 
-        <button className="inline-flex items-center gap-2 border bg-white text-gray-900 h-12 px-6 rounded-xl">
-          <span>
-             <img
-                src="https://em-content.zobj.net/thumbs/160/apple/354/waving-hand_1f44b.png"
-                alt="Waving Hand"
-                style={{ width: "1.2em", verticalAlign: "middle" }}
-              />
-            </span>
-          <span>
-            Let&apos;s Connect
-          </span>
-        </button>
+
+      <a
+        href="/Feddane-Chaima.pdf"
+        download="Feddane-Chaima.pdf"
+        type="application/pdf"
+        className="inline-flex items-center gap-2 border bg-white text-gray-900 h-12 px-6 rounded-xl hover:bg-white/80 transition z-10"
+      >
+        <img
+          src="https://em-content.zobj.net/thumbs/160/apple/354/waving-hand_1f44b.png"
+          alt="Waving Hand"
+          style={{ width: "1.2em", verticalAlign: "middle" }}
+        />
+        <span>Download CV</span>
+      </a>
+
+
+
+
+
       </div>
     </div>
   </div>;
