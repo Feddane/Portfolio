@@ -113,12 +113,13 @@ export const AboutSection = () => {
                 className="px-6 pt-6 pb-2"
               />
 
-              <div className="w-40 mx-auto -mt-6">
+              <div className="w-40 mx-auto mt-4 md:-mt-6">
                 <Image
                   src={canvaPreviewImage}
                   alt="Book Cover"
                   className="rounded-xl shadow-md"
                 />
+
               </div>
             </Card>
 

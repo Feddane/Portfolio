@@ -93,9 +93,6 @@ export const HeroSection = () => {
       </a>
 
 
-
-
-
       </div>
     </div>
   </div>;
