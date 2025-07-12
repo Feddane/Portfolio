@@ -67,7 +67,6 @@ export const ProjectsSection = () => {
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text ">
                     <span>{project.company}</span>
                     <span>&bull;</span>
-                    <span>{project.year}</span>
                   </div>
                 <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">{project.title}</h3>
                 <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
