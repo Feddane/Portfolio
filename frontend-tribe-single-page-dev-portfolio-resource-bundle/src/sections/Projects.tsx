@@ -72,13 +72,14 @@ export const ProjectsSection = () => {
                 <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">{project.title}</h3>
                 <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                 <ul className="flex flex-col gap-4 mt-4 md:mt-5">
-                  {project.results.map((result) => (
-                    <li className="flex gap-2 text-sm md:text-base text-white/50">
+                  {project.results.map((result, i) => (
+                    <li key={i} className="flex gap-2 text-sm md:text-base text-white/50">
                       <CheckCircleIcon className="size-5 md:size-6"/>
                       <span>{result.title}</span>
-                      </li>
+                    </li>
                   ))}
                 </ul>
+
                 {project.link && (
                   <a href={project.link} target="_blank" rel="noopener noreferrer">
                     <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
