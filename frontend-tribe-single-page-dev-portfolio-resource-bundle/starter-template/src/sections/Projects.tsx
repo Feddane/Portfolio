@@ -1,50 +1,51 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import storyland from "@/assets/images/story.png";
+import keystone from "@/assets/images/dashboard.png";
+import freelance from "@/assets/images/android  (1).png";
 import Image from 'next/image';
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "../assets/images/grain.jpg";
 import { Card } from "@/components/Card";
 
+
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Keystone Group Algeria",
+    title: "IoT & Network Security System",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Developed an embedded system for network scanning" },
+      { title: "Integrated IoT devices for real-time monitoring" },
+      { title: "Built a dashboard for data visualization and alerts" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    image: keystone,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Android dev",
+    title: "Interactive Storytelling Android App",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Delivers a delightful and educational experience for kids" },
+      { title: "Includes immersive audio, animations, and interactive slides" },
+      { title: "Features story search, favorites, and an extensive library" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://github.com/Feddane/Storyland",
+    image: storyland,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Freelance Client",
+    
+    title: "Reclamation & Access Management Web App",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Created a role-based access control system" },
+      { title: "Built admin/user/supervisor dashboards using Flask & JS" },
+      { title: "Handled real-time data and feedback submission flows" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://github.com/Feddane/Djezzy",
+    image: freelance,
   },
+  
+
 ];
+
 
 export const ProjectsSection = () => {
   return <div>
@@ -78,16 +79,24 @@ export const ProjectsSection = () => {
                       </li>
                   ))}
                 </ul>
-                <a href={project.link}>
-                  <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                    <span>Visit Live Site</span>
-                    <ArrowUpRightIcon className="size-4"/>
-                  </button>
-                </a>
+                {project.link && (
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                      <span>Visit Live Site</span>
+                      <ArrowUpRightIcon className="size-4" />
+                    </button>
+                  </a>
+                )}
+
                 </div>
                 <div className="relative">
-                  <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none "/>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-2xl shadow-lg"
+                  />
                 </div>
+
               </div>
             </Card>
           ))}
