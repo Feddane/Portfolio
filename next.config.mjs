@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // ✅ Ajout nécessaire pour activer `next export`
-
+  output: 'export', // ✅ Pour autoriser `next export`
+  images: {
+    unoptimized: true, // ✅ Désactive l'optimisation dynamique des images (incompatible avec export statique)
+  },
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
