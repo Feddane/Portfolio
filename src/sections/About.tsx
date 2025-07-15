@@ -1,8 +1,6 @@
 "use client";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
-import StarIcon from "../assets/icons/star.svg";
-import bookImage from "../assets/images/book-cover.png";
 import Image from "next/image";
 import JavascriptIcon from "../assets/icons/square-js.svg";
 import HTMLIcon from "../assets/icons/html5.svg";
@@ -15,11 +13,11 @@ import figmaIcon from "../assets/icons/figma.svg";
 import javaIcon from "../assets/icons/java.svg";
 import canvaIcon from "../assets/icons/canva.svg";
 import premierepro from "../assets/icons/premiere-pro.svg";
-import mapImage from "@/assets/images/map.png";
-import canvaPreviewImage from "@/assets/images/canva projects.png";
-import smileMemoji from "@/assets/images/chaima.png";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
+import canvaPreviewImage from "/public/images/canvaaa.png"
+import mapImage from "/public/images/map.png"
+import smileMemoji from "/public/images/chaima.png"
 import {motion} from "framer-motion";
 import { useRef } from "react";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";

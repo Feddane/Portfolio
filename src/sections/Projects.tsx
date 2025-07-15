@@ -1,10 +1,9 @@
-import storyland from "@/assets/images/story.png";
-import keystone from "@/assets/images/dashboard.png";
-import freelance from "@/assets/images/android  (1).png";
+import storyland from "/public/images/story.png";
+import keystone from "/public/images/dashboard.png";
+import freelance from "/public/images/android  (1).png";
 import Image from 'next/image';
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "../assets/images/grain.jpg";
 import { Card } from "@/components/Card";
 
 
